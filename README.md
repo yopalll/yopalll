@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @yopalll
 - 👀 I’m interested in computer programming
 - 🌱 I’m currently learning all of website programming
-- 💞️ I’m looking to collaborate on - nah 
-- 📫 How to reach me ig @yvlglo
+- 💞️ I’m looking for xxxxx
+- 📫 How to reach me? msg ig @yvlglo
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: my mom told me to be a doctor, but i love programming
 
