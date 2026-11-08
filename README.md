@@ -4,7 +4,7 @@
 
 ### **Backend / Full-Stack Developer & FOH Live Sound Engineer**
 
-**IT Student at Universitas Sumatera Utara (Komting Kom A) • Top 1 Aslab ITLG (Daspro C) • Part-time FOH Engineer (Digital Console & Line Array)**
+**IT Student at Universitas Sumatera Utara • ITLG (Daspro C) • Part-time FOH Engineer **
 
 *“Balancing frequencies at the digital console and optimizing logic in the backend.”*
 
