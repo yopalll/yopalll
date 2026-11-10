@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img" aria-label="Yosua Valentino Gulo - @yopalll">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Yosua Valentino Gulo - @yopalll">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#770707"/>
-      <stop offset="48%" stop-color="#1E1E1E"/>
+      <stop offset="50%" stop-color="#1E1E1E"/>
       <stop offset="100%" stop-color="#1A5187"/>
     </linearGradient>
     <radialGradient id="glowRed" cx="0.5" cy="0.5" r="0.5">
@@ -10,7 +10,7 @@
       <stop offset="100%" stop-color="#DF3232" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glowBlue" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#1A5187" stop-opacity="0.85"/>
+      <stop offset="0%" stop-color="#1A5187" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#1A5187" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0">
@@ -21,94 +21,67 @@
       <stop offset="0%" stop-color="#DF3232"/>
       <stop offset="100%" stop-color="#41E841"/>
     </linearGradient>
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-    </linearGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
     </pattern>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <clipPath id="card"><rect width="1000" height="330" rx="18"/></clipPath>
+    <clipPath id="card"><rect width="1000" height="300" rx="18"/></clipPath>
     <style>
-      .name   { font: 800 46px 'Segoe UI', Arial, sans-serif; fill: url(#nameFill); letter-spacing: 1.5px; }
+      .name   { font: 800 44px 'Segoe UI', Arial, sans-serif; fill: url(#nameFill); letter-spacing: 1px; }
       .handle { font: 600 22px 'Consolas', 'Courier New', monospace; fill: #989898; }
-      .role   { font: 700 22px 'Consolas', 'Courier New', monospace; fill: #41E841; opacity: 0; animation: cyc 9s ease-in-out infinite; }
       .pill   { font: 600 14px 'Segoe UI', Arial, sans-serif; fill: #FFFFFF; }
       .code   { font: 800 44px 'Consolas', 'Courier New', monospace; fill: #FFFFFF; }
-      .prompt { font: 700 22px 'Consolas', 'Courier New', monospace; fill: #DF3232; }
       .ring   { transform-box: fill-box; transform-origin: center; }
       .r1 { animation: spin 40s linear infinite; }
       .r2 { animation: spin 26s linear infinite reverse; }
       .r3 { animation: spin 18s linear infinite; }
-      .orb  { animation: float 6s ease-in-out infinite; }
+      .orb { animation: float 6s ease-in-out infinite; }
       .orb2 { animation: float 8s ease-in-out infinite reverse; }
-      .bar  { transform-box: fill-box; transform-origin: left center; animation: grow 1.2s ease-out both; }
-      .sweep { animation: sweep 7s ease-in-out infinite; }
+      .bar { transform-box: fill-box; transform-origin: left center; animation: grow 1.2s ease-out both; }
       .a1 { animation: rise .8s ease-out .15s both; }
       .a2 { animation: rise .8s ease-out .35s both; }
       .a3 { animation: rise .8s ease-out .55s both; }
-      .cur { animation: blink 1s steps(1) infinite; }
       @keyframes spin  { to { transform: rotate(360deg); } }
       @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
       @keyframes grow  { from { transform: scaleX(0); } to { transform: scaleX(1); } }
       @keyframes rise  { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-      @keyframes cyc   { 0% { opacity: 0; transform: translateX(-10px); } 5%,30% { opacity: 1; transform: translateX(0); } 35%,100% { opacity: 0; transform: translateX(10px); } }
-      @keyframes blink { 50% { opacity: 0; } }
-      @keyframes sweep { 0% { transform: translateX(-400px); } 60%,100% { transform: translateX(1100px); } }
     </style>
   </defs>
 
   <g clip-path="url(#card)">
-    <rect width="1000" height="330" fill="url(#bg)"/>
-    <rect width="1000" height="330" fill="url(#grid)"/>
-    <circle cx="830" cy="150" r="270" fill="url(#glowRed)"/>
-    <circle cx="990" cy="330" r="250" fill="url(#glowBlue)"/>
-    <circle cx="0" cy="0" r="220" fill="url(#glowRed)" opacity="0.5"/>
+    <rect width="1000" height="300" fill="url(#bg)"/>
+    <rect width="1000" height="300" fill="url(#grid)"/>
+    <circle cx="820" cy="140" r="260" fill="url(#glowRed)"/>
+    <circle cx="980" cy="300" r="240" fill="url(#glowBlue)"/>
 
-    <g class="sweep"><rect x="0" y="0" width="160" height="330" fill="url(#shine)" transform="skewX(-20)"/></g>
+    <g class="orb"><circle cx="640" cy="60" r="6" fill="#41E841" opacity="0.8"/></g>
+    <g class="orb2"><circle cx="940" cy="40" r="4" fill="#DF3232" opacity="0.9"/></g>
+    <g class="orb"><circle cx="700" cy="250" r="5" fill="#989898" opacity="0.7"/></g>
 
-    <g class="orb"><circle cx="650" cy="62" r="6" fill="#41E841" opacity="0.85" filter="url(#glow)"/></g>
-    <g class="orb2"><circle cx="945" cy="44" r="4" fill="#DF3232" opacity="0.95" filter="url(#glow)"/></g>
-    <g class="orb"><circle cx="705" cy="270" r="5" fill="#989898" opacity="0.7"/></g>
-    <g class="orb2"><circle cx="560" cy="290" r="3" fill="#1A5187" opacity="0.9"/></g>
-
-    <g transform="translate(830 160)">
-      <g class="ring r1"><circle r="124" fill="none" stroke="#989898" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="3 9"/></g>
-      <g class="ring r2"><circle r="96" fill="none" stroke="#DF3232" stroke-opacity="0.9" stroke-width="2.5" stroke-dasharray="70 40 20 40" filter="url(#glow)"/></g>
-      <g class="ring r3"><circle r="68" fill="none" stroke="#41E841" stroke-opacity="0.85" stroke-width="2" stroke-dasharray="30 22"/></g>
-      <circle r="46" fill="#1E1E1E" stroke="#1A5187" stroke-width="3"/>
+    <g transform="translate(820 150)">
+      <g class="ring r1"><circle r="118" fill="none" stroke="#989898" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="3 9"/></g>
+      <g class="ring r2"><circle r="92" fill="none" stroke="#DF3232" stroke-opacity="0.85" stroke-width="2.5" stroke-dasharray="70 40 20 40"/></g>
+      <g class="ring r3"><circle r="66" fill="none" stroke="#41E841" stroke-opacity="0.8" stroke-width="2" stroke-dasharray="30 22"/></g>
+      <circle r="44" fill="#1E1E1E" stroke="#1A5187" stroke-width="3"/>
       <text class="code" text-anchor="middle" y="14">&lt;/&gt;</text>
     </g>
 
-    <rect class="bar" x="56" y="54" width="130" height="6" rx="3" fill="url(#accent)"/>
-    <text class="name a1" x="56" y="120">YOSUA VALENTINO GULO</text>
-    <text class="handle a2" x="56" y="156">@yopalll</text>
-
-    <g class="a2">
-      <text class="prompt" x="56" y="202">&gt;</text>
-      <text class="role" x="82" y="202" style="animation-delay:0s">Backend / Full-Stack Developer</text>
-      <text class="role" x="82" y="202" style="animation-delay:3s">FOH Live Sound Engineer</text>
-      <text class="role" x="82" y="202" style="animation-delay:6s">Logic in code. Clarity in sound.</text>
-    </g>
+    <rect class="bar" x="56" y="58" width="130" height="6" rx="3" fill="url(#accent)"/>
+    <text class="name a1" x="56" y="124">YOSUA VALENTINO GULO</text>
+    <text class="handle a2" x="56" y="162">@yopalll</text>
 
     <g class="a3">
-      <rect x="56"  y="232" width="176" height="34" rx="17" fill="#770707" stroke="#FFFFFF" stroke-opacity="0.25"/>
-      <text class="pill" x="144" y="254" text-anchor="middle">IT Student &#183; USU</text>
-      <rect x="244" y="232" width="206" height="34" rx="17" fill="#1A5187" stroke="#FFFFFF" stroke-opacity="0.25"/>
-      <text class="pill" x="347" y="254" text-anchor="middle">Lab Assistant &#183; ITLG</text>
-      <rect x="462" y="232" width="170" height="34" rx="17" fill="#DF3232" stroke="#FFFFFF" stroke-opacity="0.25"/>
-      <text class="pill" x="547" y="254" text-anchor="middle">FOH Engineer</text>
+      <rect x="56"  y="196" width="176" height="34" rx="17" fill="#770707" stroke="#FFFFFF" stroke-opacity="0.25"/>
+      <text class="pill" x="144" y="218" text-anchor="middle">IT Student &#183; USU</text>
+      <rect x="244" y="196" width="206" height="34" rx="17" fill="#1A5187" stroke="#FFFFFF" stroke-opacity="0.25"/>
+      <text class="pill" x="347" y="218" text-anchor="middle">Lab Assistant &#183; ITLG</text>
+      <rect x="462" y="196" width="170" height="34" rx="17" fill="#DF3232" stroke="#FFFFFF" stroke-opacity="0.25"/>
+      <text class="pill" x="547" y="218" text-anchor="middle">FOH Engineer</text>
     </g>
 
-    <rect x="0"   y="318" width="400" height="12" fill="#770707"/>
-    <rect x="400" y="318" width="250" height="12" fill="#1A5187"/>
-    <rect x="650" y="318" width="150" height="12" fill="#989898"/>
-    <rect x="800" y="318" width="100" height="12" fill="#41E841"/>
-    <rect x="900" y="318" width="100" height="12" fill="#DF3232"/>
+    <rect x="0"   y="288" width="400" height="12" fill="#770707"/>
+    <rect x="400" y="288" width="250" height="12" fill="#1A5187"/>
+    <rect x="650" y="288" width="150" height="12" fill="#989898"/>
+    <rect x="800" y="288" width="100" height="12" fill="#41E841"/>
+    <rect x="900" y="288" width="100" height="12" fill="#DF3232"/>
   </g>
 </svg>
