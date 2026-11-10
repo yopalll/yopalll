@@ -1,12 +1,11 @@
-<img width="100%" src="assets/banner.svg" alt="Yosua Valentino Gulo - @yopalll" />
+﻿<img width="100%" src="assets/banner.svg" alt="Yosua Valentino Gulo - @yopalll" />
 
-<p align="left">
-  <a href="https://github.com/yopalll"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=900&color=DF3232&background=00000000&width=720&height=36&lines=Backend+%2F+Full-Stack+Developer;FOH+Live+Sound+Engineer;Logic+in+code.+Clarity+in+sound." alt="Typing SVG" /></a>
-</p>
+<br><br>
 
 <img width="100%" src="assets/h-about.svg" alt="About Me" />
-<br><br>
+<br>
 <img width="100%" src="assets/terminal.svg" alt="Profile summary" />
+
 <br><br>
 
 <img width="100%" src="assets/h-stack.svg" alt="Tech Stack" />
@@ -42,18 +41,18 @@
 <img width="100%" src="assets/h-stats.svg" alt="GitHub Stats" />
 <br><br>
 <p align="left">
-  <img height="170" src="https://github-readme-stats.shion.dev/api?username=yopalll&show_icons=true&include_all_commits=true&hide_border=true&border_radius=10&bg_color=135,1E1E1E,770707&title_color=FFFFFF&text_color=E6E6E6&icon_color=41E841" alt="GitHub Stats" />
-  <img height="170" src="https://github-readme-stats.shion.dev/api/top-langs/?username=yopalll&layout=compact&langs_count=8&hide_border=true&border_radius=10&bg_color=135,1E1E1E,1A5187&title_color=FFFFFF&text_color=E6E6E6" alt="Top Languages" />
+  <img width="49%" src="https://github-readme-stats.shion.dev/api?username=yopalll&show_icons=true&include_all_commits=true&hide_border=true&border_radius=12&bg_color=135,1E1E1E,770707&title_color=FFFFFF&text_color=E6E6E6&icon_color=41E841&ring_color=41E841" alt="GitHub Stats" />
+  <img width="49%" src="https://streak-stats.demolab.com/?user=yopalll&hide_border=true&border_radius=12&background=135,1E1E1E,1A5187&stroke=989898&ring=41E841&fire=DF3232&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=41E841&sideLabels=E6E6E6&dates=E6E6E6" alt="GitHub Streak" />
 </p>
 <p align="left">
-  <img src="https://streak-stats.demolab.com/?user=yopalll&hide_border=true&border_radius=10&background=135,1E1E1E,770707&stroke=989898&ring=41E841&fire=DF3232&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=41E841&sideLabels=E6E6E6&dates=989898" alt="GitHub Streak" />
+  <img width="98%" src="https://github-readme-stats.shion.dev/api/top-langs/?username=yopalll&layout=compact&langs_count=8&card_width=700&hide_border=true&border_radius=12&bg_color=135,1E1E1E,770707&title_color=FFFFFF&text_color=E6E6E6" alt="Top Languages" />
 </p>
 
 <img width="100%" src="assets/h-contrib.svg" alt="Contributions" />
 <br><br>
-<p align="left">
-  <img width="100%" src="https://ghchart.rshah.org/DF3232/yopalll" alt="yopalll's contribution graph" />
-</p>
+<img width="100%" src="assets/contributions.svg" alt="yopalll's contribution heatmap" />
+
+<br><br>
 
 <img width="100%" src="assets/h-contact.svg" alt="Contact" />
 <br><br>
