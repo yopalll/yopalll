@@ -1,47 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-label="Yosua Valentino Gulo - @yopalll">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Yosua Valentino Gulo - @yopalll">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#770707"/>
-      <stop offset="55%" stop-color="#1E1E1E"/>
+      <stop offset="50%" stop-color="#1E1E1E"/>
       <stop offset="100%" stop-color="#1A5187"/>
     </linearGradient>
-    <pattern id="stripes" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <rect width="2" height="14" fill="#ffffff" opacity="0.045"/>
-    </pattern>
+    <radialGradient id="glowRed" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#DF3232" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#DF3232" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#1A5187" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1A5187" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E6E6E6"/>
+    </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#DF3232"/>
-      <stop offset="100%" stop-color="#1A5187"/>
+      <stop offset="100%" stop-color="#41E841"/>
     </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <clipPath id="card"><rect width="1000" height="300" rx="18"/></clipPath>
     <style>
-      .name { font: 800 46px 'Segoe UI', Arial, sans-serif; fill: #ffffff; letter-spacing: 1px; }
+      .name   { font: 800 44px 'Segoe UI', Arial, sans-serif; fill: url(#nameFill); letter-spacing: 1px; }
       .handle { font: 600 22px 'Consolas', 'Courier New', monospace; fill: #989898; }
-      .role { font: 600 15px 'Consolas', 'Courier New', monospace; fill: #ffffff; opacity: .85; letter-spacing: 1.5px; }
-      .glyph { font: 800 170px 'Consolas', 'Courier New', monospace; fill: #ffffff; opacity: .06; }
-      @keyframes slide { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-      @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-      .bar { transform-origin: 60px 0; animation: slide 1.1s ease-out forwards; }
-      .f1 { animation: fade .8s ease-out .1s both; }
-      .f2 { animation: fade .8s ease-out .35s both; }
-      .f3 { animation: fade .8s ease-out .6s both; }
+      .pill   { font: 600 14px 'Segoe UI', Arial, sans-serif; fill: #FFFFFF; }
+      .code   { font: 800 44px 'Consolas', 'Courier New', monospace; fill: #FFFFFF; }
+      .ring   { transform-box: fill-box; transform-origin: center; }
+      .r1 { animation: spin 40s linear infinite; }
+      .r2 { animation: spin 26s linear infinite reverse; }
+      .r3 { animation: spin 18s linear infinite; }
+      .orb { animation: float 6s ease-in-out infinite; }
+      .orb2 { animation: float 8s ease-in-out infinite reverse; }
+      .bar { transform-box: fill-box; transform-origin: left center; animation: grow 1.2s ease-out both; }
+      .a1 { animation: rise .8s ease-out .15s both; }
+      .a2 { animation: rise .8s ease-out .35s both; }
+      .a3 { animation: rise .8s ease-out .55s both; }
+      @keyframes spin  { to { transform: rotate(360deg); } }
+      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+      @keyframes grow  { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+      @keyframes rise  { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
   </defs>
 
-  <rect width="1000" height="240" rx="14" fill="url(#bg)"/>
-  <rect width="1000" height="240" rx="14" fill="url(#stripes)"/>
+  <g clip-path="url(#card)">
+    <rect width="1000" height="300" fill="url(#bg)"/>
+    <rect width="1000" height="300" fill="url(#grid)"/>
+    <circle cx="820" cy="140" r="260" fill="url(#glowRed)"/>
+    <circle cx="980" cy="300" r="240" fill="url(#glowBlue)"/>
 
-  <text x="640" y="190" class="glyph">&lt;/&gt;</text>
+    <g class="orb"><circle cx="640" cy="60" r="6" fill="#41E841" opacity="0.8"/></g>
+    <g class="orb2"><circle cx="940" cy="40" r="4" fill="#DF3232" opacity="0.9"/></g>
+    <g class="orb"><circle cx="700" cy="250" r="5" fill="#989898" opacity="0.7"/></g>
 
-  <rect class="bar" x="60" y="48" width="120" height="6" rx="3" fill="url(#accent)"/>
-  <text x="60" y="108" class="name f1">YOSUA VALENTINO GULO</text>
-  <text x="60" y="146" class="handle f2">@yopalll</text>
-  <text x="60" y="180" class="role f3">IT STUDENT  •  LABORATORY ASSISTANT  •  UNIVERSITAS SUMATERA UTARA</text>
+    <g transform="translate(820 150)">
+      <g class="ring r1"><circle r="118" fill="none" stroke="#989898" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="3 9"/></g>
+      <g class="ring r2"><circle r="92" fill="none" stroke="#DF3232" stroke-opacity="0.85" stroke-width="2.5" stroke-dasharray="70 40 20 40"/></g>
+      <g class="ring r3"><circle r="66" fill="none" stroke="#41E841" stroke-opacity="0.8" stroke-width="2" stroke-dasharray="30 22"/></g>
+      <circle r="44" fill="#1E1E1E" stroke="#1A5187" stroke-width="3"/>
+      <text class="code" text-anchor="middle" y="14">&lt;/&gt;</text>
+    </g>
 
-  <g>
-    <rect x="0"   y="226" width="400" height="14" fill="#770707"/>
-    <rect x="400" y="226" width="250" height="14" fill="#1A5187"/>
-    <rect x="650" y="226" width="150" height="14" fill="#989898"/>
-    <rect x="800" y="226" width="100" height="14" fill="#41E841"/>
-    <rect x="900" y="226" width="100" height="14" fill="#DF3232"/>
+    <rect class="bar" x="56" y="58" width="130" height="6" rx="3" fill="url(#accent)"/>
+    <text class="name a1" x="56" y="124">YOSUA VALENTINO GULO</text>
+    <text class="handle a2" x="56" y="162">@yopalll</text>
+
+    <g class="a3">
+      <rect x="56"  y="196" width="176" height="34" rx="17" fill="#770707" stroke="#FFFFFF" stroke-opacity="0.25"/>
+      <text class="pill" x="144" y="218" text-anchor="middle">IT Student &#183; USU</text>
+      <rect x="244" y="196" width="206" height="34" rx="17" fill="#1A5187" stroke="#FFFFFF" stroke-opacity="0.25"/>
+      <text class="pill" x="347" y="218" text-anchor="middle">Lab Assistant &#183; ITLG</text>
+      <rect x="462" y="196" width="170" height="34" rx="17" fill="#DF3232" stroke="#FFFFFF" stroke-opacity="0.25"/>
+      <text class="pill" x="547" y="218" text-anchor="middle">FOH Engineer</text>
+    </g>
+
+    <rect x="0"   y="288" width="400" height="12" fill="#770707"/>
+    <rect x="400" y="288" width="250" height="12" fill="#1A5187"/>
+    <rect x="650" y="288" width="150" height="12" fill="#989898"/>
+    <rect x="800" y="288" width="100" height="12" fill="#41E841"/>
+    <rect x="900" y="288" width="100" height="12" fill="#DF3232"/>
   </g>
-  <rect x="0" y="226" width="1000" height="14" rx="0" fill="none"/>
 </svg>

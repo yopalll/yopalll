@@ -1,0 +1,22 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="48" viewBox="0 0 1000 48" role="img" aria-label="TECH STACK">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1A5187" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#1E1E1E"/>
+      <stop offset="100%" stop-color="#1E1E1E"/>
+    </linearGradient>
+    <style>
+      .t { font: 800 20px 'Segoe UI', Arial, sans-serif; fill: #FFFFFF; letter-spacing: 4px; }
+      .b { transform-box: fill-box; transform-origin: top; animation: grow .8s ease-out both; }
+      @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    </style>
+  </defs>
+  <rect width="1000" height="48" rx="10" fill="url(#g)"/>
+  <rect class="b" x="0" y="0" width="8" height="48" rx="4" fill="#1A5187"/>
+  <text class="t" x="30" y="31">TECH STACK</text>
+  <circle cx="900" cy="24" r="4" fill="#770707"/>
+  <circle cx="918" cy="24" r="4" fill="#1A5187"/>
+  <circle cx="936" cy="24" r="4" fill="#989898"/>
+  <circle cx="954" cy="24" r="4" fill="#41E841"/>
+  <circle cx="972" cy="24" r="4" fill="#DF3232"/>
+</svg>
